@@ -1,0 +1,15 @@
+# 使用 nginx:latest 作为基础镜像
+FROM nginx:latest
+
+# 复制自定义 Nginx 配置文件
+COPY slider_model.conf /etc/nginx/conf.d/slider_model.conf
+
+# 复制 SSL 证书
+COPY ./etc/ssl/fullchain.pem /etc/ssl/fullchain.pem
+COPY ./etc/ssl/privkey.pem /etc/ssl/privkey.pem
+
+# 确保证书目录和文件权限
+RUN chmod 644 /etc/ssl/*.pem
+
+# 确保 Nginx 以非守护进程模式运行
+CMD ["nginx", "-g", "daemon off;"]

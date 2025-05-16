@@ -1,0 +1,23 @@
+services:
+  slider_model_flask:
+    build:
+      context: .
+      dockerfile: dockerfile
+    volumes:
+      - "/flask_app/slider_model/images:/flask_app/slider_model/saved_images"
+      - "/flask_app/slider_model/json_tmp:/flask_app/slider_model/saved_coco_json"
+    restart: always
+  nginx_flask:
+    build:
+      context: .
+      dockerfile: dockerfile.nginx
+    volumes:
+      - "./slider_model.conf:/etc/nginx/conf.d/slider_model.conf:ro"
+      - "/var/log/slider_model_flask.log:/var/log/slider_model_flask.log"
+      - "/var/log/slider_model_flask.error.log:/var/log/slider_model_flask.error.log"
+      - "./etc/ssl:/etc/ssl"
+    ports:
+      - "80:80"
+      - "443:443"
+    restart: always
+
