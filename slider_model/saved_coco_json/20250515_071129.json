@@ -1,0 +1,26 @@
+{
+  "version": "4.5.7",
+  "flags": {},
+  "shapes": [
+    {
+      "label": "gap",
+      "points": [
+        [
+          235.0420684814453,
+          280.98822021484375
+        ],
+        [
+          333.2437744140625,
+          175.63186645507812
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "rectangle",
+      "flags": {}
+    }
+  ],
+  "imagePath": "20250515_071129.png",
+  "imageData": null,
+  "imageHeight": 390,
+  "imageWidth": 672
+}
