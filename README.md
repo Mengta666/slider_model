@@ -5,9 +5,11 @@
 https://slider_pre.mengta.link/
 
 原图像：
+
 ![00000](https://imgur.mengta.link/images/2025/05/16/00000.jpeg)
 
 预测后的：
+
 ![00000 预测](https://imgur.mengta.link/images/2025/05/16/00000_.png)
 
 # 部署方式（只有docker）：
