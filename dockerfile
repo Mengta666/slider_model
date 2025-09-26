@@ -10,8 +10,8 @@ COPY slider_model.tar /flask_app/slider_model/
 # 安装必要工具和 Python 3.11
 RUN apt-get update && \
     apt-get install -y \
-    python3.11 \
-    python3.11-venv \
+    python3 \
+    python3-venv \
     python3-pip \
     tar \
     && apt-get clean && \
@@ -32,8 +32,8 @@ RUN if [ -f "venv/bin/activate" ]; then \
         python3.11 -m venv venv && \
         . venv/bin/activate && \
         /flask_app/slider_model/venv/bin/pip install \
-            torch==2.3.1+cpu \
-            torchvision==0.18.1+cpu \
+            torch==2.6.1+cpu \
+            torchvision==0.21.0+cpu \
 	    --index-url https://download.pytorch.org/whl/cpu &&\
 	/flask_app/slider_model/venv/bin/pip install\
             flask \
