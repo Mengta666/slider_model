@@ -18,11 +18,11 @@
 
 另一种用opencv并不能准确预测的情况（大红框）：
 
-[![match picture](https://imgur.mengta.link/images/2025/05/16/match_picture.png)](https://imgur.mengta.link/image/RuTp)
+![match picture](https://imgur.mengta.link/images/2025/05/16/match_picture.png)
 
 使用本文模型的预测结果（小红框）：
 
-[![match picture better](https://imgur.mengta.link/images/2025/05/16/match_picture_better.png)](https://imgur.mengta.link/image/Rupx)
+![match picture better](https://imgur.mengta.link/images/2025/05/16/match_picture_better.png)
 
 ## 部署方式（只有docker）：
 ### 1. 下载本页的所有文件到你的服务器中
