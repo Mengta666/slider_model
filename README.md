@@ -10,19 +10,19 @@
 
 原图像：
 
-![00000](https://imgur.mengta.link/images/2025/05/16/00000.jpeg)
+![00000](https://blog.mengta.net/wp-content/uploads/2025/05/00000.jpeg)
 
 预测后的：
 
-![00000 预测](https://imgur.mengta.link/images/2025/05/16/00000_.png)
+![00000 预测](https://blog.mengta.net/wp-content/uploads/2025/05/00000_.png)
 
 另一种用opencv并不能准确预测的情况（大红框）：
 
-![match picture](https://imgur.mengta.link/images/2025/05/16/match_picture.png)
+![match picture](https://blog.mengta.net/wp-content/uploads/2025/05/match_picture.png)
 
 使用本文模型的预测结果（小红框）：
 
-![match picture better](https://imgur.mengta.link/images/2025/05/16/match_picture_better.png)
+![match picture better](https://blog.mengta.net/wp-content/uploads/2025/05/match_picture_better.png)
 
 ## 部署方式（只有docker）：
 ### 1. 下载本页的所有文件到你的服务器中
